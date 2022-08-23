@@ -1,0 +1,7 @@
+<div
+  class="body"
+  [class.body-trimmed]="collapsed && screenWidth > 768"
+  [class.body-md-screen]="collapsed && screenWidth <= 768 && screenWidth > 0"
+>
+  <router-outlet></router-outlet>
+</div>
