@@ -9,6 +9,6 @@ import {
   styleUrls: ["./body.component.scss"]
 })
 export class BodyComponent {
-  @Input() public collapsed = false;
+  @Input() public collapsed?: boolean;
   @Input() public screenWidth = 0;
 }

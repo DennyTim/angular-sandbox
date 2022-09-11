@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 
+$green: #40c980;
+$blue: #007acc;
+$black: #1e1e1e;
+$light-grey: #929293;
+$orange: #c97e5a;
+$yellow: #e5e510;
+$red: #ff6058;
+
 * {
   margin: 0;
   padding: 0;
@@ -29,4 +37,9 @@ body {
   .card-body {
     padding: 1rem 1.5rem;
   }
+}
+
+@mixin box-shadow {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 }

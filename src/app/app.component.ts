@@ -7,8 +7,8 @@ import { Component } from "@angular/core";
 })
 export class AppComponent {
   title = "sandbox-a14";
-  isSideNavCollapsed = false;
-  screenWidth = 0;
+  isSideNavCollapsed = true;
+  screenWidth = window.innerWidth;
 
   handleToggle(event: { screenWidth: number; collapsed: boolean }): void {
     this.screenWidth = event.screenWidth;

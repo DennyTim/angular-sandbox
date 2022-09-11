@@ -15,8 +15,9 @@ const routes: Routes = [
     component: ProjectsComponent
   },
   {
-    path: "angular-one",
-    component: ProjectsComponent
+    path: "card-component",
+    loadChildren: () => import("../modules/card-component/card-component.module")
+      .then(m => m.CardComponentModule)
   },
   {
     path: "angular-second",

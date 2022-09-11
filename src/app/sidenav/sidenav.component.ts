@@ -9,6 +9,7 @@ import {
   Component,
   EventEmitter,
   HostListener,
+  Input,
   OnInit,
   Output
 } from "@angular/core";
@@ -41,6 +42,7 @@ export class SidenavComponent implements OnInit {
     collapsed: boolean
   }>();
 
+  @Input()
   public collapsed = false;
   public screenWidth = 0;
   public navData = navbarData;
