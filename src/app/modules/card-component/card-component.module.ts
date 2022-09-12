@@ -12,6 +12,9 @@ import { CardItemComponent } from "./components/component-item/card-item.compone
   declarations: [
     CardComponentComponent,
     CardItemComponent
+  ],
+  exports: [
+    CardItemComponent
   ]
 })
 export class CardComponentModule {

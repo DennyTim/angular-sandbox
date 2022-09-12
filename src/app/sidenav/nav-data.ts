@@ -46,13 +46,13 @@ export const navbarData: INavbarData[] = [
         label: "Angular",
         items: [
           {
+            routerLink: "projects/accordion",
+            label: "Accordion"
+          },
+          {
             routerLink: "projects/card-component",
             label: "Card Component"
           },
-          {
-            routerLink: "projects/angular-second",
-            label: "Second"
-          }
         ]
       }
     ]

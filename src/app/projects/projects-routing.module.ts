@@ -20,8 +20,9 @@ const routes: Routes = [
       .then(m => m.CardComponentModule)
   },
   {
-    path: "angular-second",
-    component: ProjectsComponent
+    path: "accordion",
+    loadChildren: () => import("../modules/accordion/accordion.module")
+      .then(m => m.AccordionModule)
   }
 ];
 
