@@ -28,6 +28,11 @@ const routes: Routes = [
     path: "progress-bar",
     loadChildren: () => import("../modules/progress-bar/progress-bar.module")
       .then(m => m.ProgressBarModule)
+  },
+  {
+    path: "star-ratings",
+    loadChildren: () => import("../modules/star-ratings/star-ratings.module")
+      .then(m => m.StarRatingsModule)
   }
 ];
 

@@ -1,0 +1,14 @@
+<div title="rating">
+  <i
+    *ngFor="let star of fullStars"
+    class="fas fa-star"
+  ></i>
+  <i
+    *ngIf="hasHalfStar"
+    class="fas fa-star-half-alt"
+  ></i>
+  <i
+    *ngFor="let star of emptyStars"
+    class="far fa-star"
+  ></i>
+</div>
