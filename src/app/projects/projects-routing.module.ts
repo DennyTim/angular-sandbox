@@ -23,6 +23,11 @@ const routes: Routes = [
     path: "accordion",
     loadChildren: () => import("../modules/accordion/accordion.module")
       .then(m => m.AccordionModule)
+  },
+  {
+    path: "progress-bar",
+    loadChildren: () => import("../modules/progress-bar/progress-bar.module")
+      .then(m => m.ProgressBarModule)
   }
 ];
 

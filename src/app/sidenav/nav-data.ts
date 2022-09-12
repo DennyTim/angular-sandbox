@@ -53,6 +53,10 @@ export const navbarData: INavbarData[] = [
             routerLink: "projects/card-component",
             label: "Card Component"
           },
+          {
+            routerLink: "projects/progress-bar",
+            label: "Progress Bar"
+          }
         ]
       }
     ]

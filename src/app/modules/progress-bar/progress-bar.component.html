@@ -1,0 +1,16 @@
+<app-card-item
+  [title]="'Progress Bar'"
+  [subTitle]="'Components'"
+  [iconClasses]="'fas fa-info-circle'"
+>
+  <app-progress-bar-item
+    body
+    [value]="progressValue"
+  ></app-progress-bar-item>
+
+  <button
+    footer
+    (click)="progressValue = 75;"
+  >Update
+  </button>
+</app-card-item>
