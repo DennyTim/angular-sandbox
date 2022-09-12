@@ -33,6 +33,11 @@ const routes: Routes = [
     path: "star-ratings",
     loadChildren: () => import("../modules/star-ratings/star-ratings.module")
       .then(m => m.StarRatingsModule)
+  },
+  {
+    path: "chips",
+    loadChildren: () => import("../modules/chips/chips.module")
+      .then(m => m.ChipsModule)
   }
 ];
 

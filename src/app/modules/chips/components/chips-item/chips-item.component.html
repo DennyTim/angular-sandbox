@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="input-container">
+    <ul
+      class="chip-bar"
+      (click)="onChipBarClick()"
+    >
+      <li
+        *ngFor="let item of items; let i = index"
+        class="chip"
+      >
+        <span class="chip-label">{{ item }}</span>
+        <span
+          *ngIf="removable"
+          class="material-icons md-18 remove"
+          (click)="removeItem(i)"
+        >x</span>
+      </li>
+      <li class="input-field">
+        <input
+          #inputField
+          class="input"
+          id=""
+          type="text"
+          name=""
+          autocomplete="off"
+          [placeholder]="placeholder"
+          (keydown)="onKeyDown($event, inputField.value)"
+        >
+      </li>
+    </ul>
+    <div class="action-btn">
+      <div
+        class="material-icons clear ripple"
+        (click)="removeAll()"
+      >
+        <i class="fa-regular fa-circle-xmark"></i>
+      </div>
+    </div>
+  </div>
+  <div class="chip-footer">
+    <span>Enter a comma after each tag</span>
+  </div>
+</div>
