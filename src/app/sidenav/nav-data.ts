@@ -54,8 +54,18 @@ export const navbarData: INavbarData[] = [
             label: "Card Component"
           },
           {
-            routerLink: "projects/chips",
-            label: "Chips"
+            routerLink: "projects/inputs",
+            label: "Inputs",
+            items: [
+              {
+                routerLink: "projects/chips",
+                label: "Chips"
+              },
+              {
+                routerLink: "projects/otp",
+                label: "Otp-input"
+              }
+            ]
           },
           {
             routerLink: "projects/progress-bar",

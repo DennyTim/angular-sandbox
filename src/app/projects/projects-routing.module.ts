@@ -38,6 +38,11 @@ const routes: Routes = [
     path: "chips",
     loadChildren: () => import("../modules/chips/chips.module")
       .then(m => m.ChipsModule)
+  },
+  {
+    path: "otp",
+    loadChildren: () => import("../modules/otp/otp.module")
+      .then(m => m.OtpModule)
   }
 ];
 

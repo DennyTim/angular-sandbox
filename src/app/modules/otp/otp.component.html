@@ -1,0 +1,15 @@
+<app-card-item
+  [title]="'Otp-input'"
+  [subTitle]="'Components'"
+  [iconClasses]="'fas fa-info-circle'"
+>
+  <div body>
+    <app-otp-input
+      #input="ngModel"
+      [(ngModel)]="data"
+    ></app-otp-input>
+    <b>Entered value:</b> {{data}}
+    <br>
+    <b>Input valid:</b> {{input.valid}}
+  </div>
+</app-card-item>
